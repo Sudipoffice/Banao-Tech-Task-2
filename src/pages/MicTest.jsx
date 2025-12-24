@@ -11,7 +11,6 @@ export default function MicTest() {
   const mediaRecorderRef = useRef(null);
   const chunksRef = useRef([]);
 
-  // Step 1: Ask for mic permission
   const requestMic = async () => {
     setLoading(true);
     setError(null);
@@ -26,7 +25,6 @@ export default function MicTest() {
     }
   };
 
-  // Step 2: Record audio for 5 seconds
   const startRecording = () => {
     const recorder = new MediaRecorder(stream);
     mediaRecorderRef.current = recorder;

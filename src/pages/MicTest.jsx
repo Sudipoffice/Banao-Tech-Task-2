@@ -60,7 +60,7 @@ export default function MicTest() {
 
       {stream && (
         <>
-          <p>Mic is working ✅</p>
+          <p>Mic is working </p>
 
           <p className="italic">
             "Hello, this is a microphone test"
@@ -72,7 +72,7 @@ export default function MicTest() {
 
           {audioURL && (
             <>
-              <p>Audio captured successfully ✅</p>
+              <p>Audio captured successfully </p>
               <audio controls src={audioURL} />
             </>
           )}
